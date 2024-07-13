@@ -1,5 +1,5 @@
 .moving-image {
-  animation: xAxis 25s infinite cubic-bezier(0.02, 0.01, 0.21, 1) alternate;
+  animation: xAxis 20s infinite cubic-bezier(0.02, 0.01, 0.21, 1) alternate;
   width: 10vw;
 }
 
@@ -25,26 +25,34 @@
   }
   50% {
     animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
-    transform: translateY(90vh);
+    transform: translateY(80vh);
+  }
+  70% {
+    animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+    transform: translateY(50vh);
   }
 }
 
 @keyframes xAxis {
   0% {
     animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
-    transform: translateX(10vw);
+    transform: translateX(-20vw);
   }
   10% {
     animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
-    transform: translateX(50vw);
+    transform: translateX(-20vw);
   }
   20% {
     animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
-    transform: translateX(20vw);
+    transform: translateX(40vw);
   }
   50% {
     animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
     transform: translateX(70vw);
+  }
+  70% {
+    animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+    transform: translateX(50vw);
   }
 }
 
