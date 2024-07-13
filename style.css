@@ -1,7 +1,7 @@
 .moving-image {
   animation: toRight linear 6.8s infinite alternate, bounce linear 17s infinite alternate;
   position: absolute;
-  width: 5vw;
+  width: 10vw;
 }
 
 @keyframes bounce {
