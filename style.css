@@ -1,5 +1,7 @@
 .moving-image {
   animation: toRight linear 6.8s infinite alternate, bounce linear 17s infinite alternate;
+  position: absolute;
+  width: 5vw;
 }
 
 @keyframes bounce {
@@ -9,7 +11,7 @@
   48% {
   }
   50% {
-    top: calc(100% - var(500px));
+    top: calc(100% - 250px);
   }
   52% {
   }
@@ -23,6 +25,6 @@
     left: 0;
   }
   100% {
-    left: calc(100% - var(500px));
+    left: calc(100% - 250px);
   }
 }
