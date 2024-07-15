@@ -14,11 +14,11 @@
   animation: yAxis 25s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64) alternate;
   animation-delay: 3s;
 }
-/* position on top of avatar */
+
 .moving-x-container {
   position: absolute;
-  top: 8rem;
-  left: calc(50% - 64px);
+  top: -10vw;
+  left: -10vw;
   animation: xAxis 17s infinite cubic-bezier(0.02, 0.01, 0.21, 1) alternate;
   animation-delay: 3s;
 }
@@ -26,15 +26,15 @@
 @keyframes yAxis {
   0% {
     animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
-    transform: translateY(0);
+    transform: translateY(20vh);
   }
   20% {
     animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
-    transform: translateY(15vh);
+    transform: translateY(35vh);
   }
   30% {
     animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
-    transform: translateY(30vh);
+    transform: translateY(50vh);
   }
   50% {
     animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
@@ -42,26 +42,26 @@
   }
   70% {
     animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
-    transform: translateY(50vh);
+    transform: translateY(40vh);
   }
 }
 
 @keyframes xAxis {
   0% {
     animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
-    transform: translateX(0);
+    transform: translateX(20vw);
   }
   20% {
     animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
-    transform: translateX(30vw);
+    transform: translateX(50vw);
   }
   30% {
     animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
-    transform: translateX(-30vw);
+    transform: translateX(-10vw);
   }
   70% {
     animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
-    transform: translateX(20vw);
+    transform: translateX(40vw);
   }
 }
 
