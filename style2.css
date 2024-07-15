@@ -46,18 +46,21 @@
 
 @keyframes xAxis {
   0% {
-    animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
-    transform: translateX(0);
+    animation-timing-function: steps(1, jump-end);
   }
   20% {
     animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+    transform: translateX(0);
+  }
+  30% {
+    animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
     transform: translateX(30vw);
   }
-  50% {
+  60% {
     animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
     transform: translateX(60vw);
   }
-  70% {
+  80% {
     animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
     transform: translateX(40vw);
   }
