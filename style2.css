@@ -26,6 +26,10 @@
 @keyframes yAxis {
   0% {
     animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+    transform: translateY(0);
+  }
+  0% {
+    animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
     transform: translateY(20vh);
   }
   20% {
@@ -49,19 +53,27 @@
 @keyframes xAxis {
   0% {
     animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
-    transform: translateX(20vw);
+    transform: translateX(0);
+  }
+  10% {
+    animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+    transform: translateX(30vw);
   }
   20% {
     animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
-    transform: translateX(50vw);
+    transform: translateX(15vw);
   }
   30% {
     animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
-    transform: translateX(-10vw);
+    transform: translateX(60vw);
+  }
+  50% {
+    animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+    transform: translateX(10vw);
   }
   70% {
     animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
-    transform: translateX(40vw);
+    transform: translateX(50vw);
   }
 }
 
