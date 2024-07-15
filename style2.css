@@ -23,22 +23,25 @@
 
 @keyframes yAxis {
   0% {
-    animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
-    transform: translateY(0);
+    animation-timing-function: steps(1, jump-end);
   }
   20% {
     animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
-    transform: translateY(15vh);
+    transform: translateY(0);
   }
   30% {
     animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+    transform: translateY(15vh);
+  }
+  40% {
+    animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
     transform: translateY(30vh);
   }
-  50% {
+  60% {
     animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
     transform: translateY(80vh);
   }
-  70% {
+  80% {
     animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
     transform: translateY(50vh);
   }
