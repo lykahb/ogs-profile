@@ -10,6 +10,7 @@
 }
 .growing-container > img.back {
   transition: transform var(--timing-duration, 0.5s) ease-out;
+  opacity: 0.5;
   filter: blur(1px);
 }
 .growing-container:hover > img.back {
