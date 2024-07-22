@@ -3,17 +3,19 @@
   width: 10vw;
 }
 
-.growing-container > img {
+.growing-container > img, .growing-container > embed {
   position: absolute;
   top: 0;
   width: 100%;
 }
-.growing-container > img.back {
+
+.growing-container > .sai-ghostly-outline {
   transition: transform var(--timing-duration, 0.5s) ease-out;
   opacity: 0.5;
   filter: blur(1px);
 }
-.growing-container:hover > img.back {
+
+.growing-container:hover > .sai-ghostly-outline {
   transform: scale(10);
   --timing-duration: 10s;
 }
