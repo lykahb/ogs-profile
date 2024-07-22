@@ -1,15 +1,20 @@
 .growing-container {
+  position: relative;
   width: 10vw;
-  opacity: 0.7;
-  transition: transform 0.2s ease, opacity 1s;
 }
 
 .growing-container > img {
+  position: absolute;
+  top: 0;
   width: 100%;
 }
-.growing-container:hover {
-  opacity: 1;
-  transform: scale(1.5) rotate(-15deg);
+.growing-container > img.back {
+  transition: transform var(--timing-duration, 0.5s) ease-out;
+  filter: blur(1px);
+}
+.growing-container:hover > img.back {
+  transform: scale(10);
+  --timing-duration: 10s;
 }
 
 .moving-y-container {
