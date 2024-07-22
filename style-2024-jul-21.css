@@ -1,12 +1,14 @@
 .growing-container {
   width: 10vw;
-  transition: transform 0.2s ease;
+  opacity: 0.7;
+  transition: transform 0.2s ease, opacity 1s;
 }
 
 .growing-container > img {
   width: 100%;
 }
 .growing-container:hover {
+  opacity: 1;
   transform: scale(1.5) rotate(-15deg);
 }
 
