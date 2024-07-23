@@ -10,14 +10,15 @@
 }
 
 .growing-container > .sai-ghostly-outline {
-  transition: transform var(--timing-duration, 0.5s) ease-out;
-  opacity: 0.5;
   filter: blur(1px);
+  opacity: 0.5;
+  transform: scale(1.25);
+  transition: transform var(--timing-duration, 0.5s) ease-out;
 }
 
 .growing-container:hover > .sai-ghostly-outline {
-  transform: scale(5);
   --timing-duration: 10s;
+  transform: scale(5);
 }
 
 .moving-y-container {
